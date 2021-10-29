@@ -16,3 +16,9 @@
 .font-monospace {
   font-family: Space Mono, monospace;
 }
+
+:root {
+  --font-sans: Inter;
+  --font-serif: Lora;
+  --font-monospace: Space Mono;
+}

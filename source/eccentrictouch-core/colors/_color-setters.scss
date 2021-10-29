@@ -8,31 +8,31 @@
 /// @param $color {color|string}
 /// @return {class}
 @mixin generate-classes($type, $color, $color-name) {
-		$_class-keys: (
-				'text': text,
-				'border': border,
-				'background': bg,
-				'fill': fill,
-				'stroke': stroke
-		);
-
-		$_property-keys: (
-				'text': color,
-				'border': border-color,
-				'background': background-color,
-				'fill': fill,
-				'stroke': stroke
-		);
-
-		$_class-key: map.get($_class-keys, $type);
-		$_property: map.get($_property-keys, $type);
-		$_color-map: parser.split($color);
-
-		@if validator.is-type_($type) {
-				@each $variant, $color in $_color-map {
-						.#{$_class-key}-#{$color-name}-#{$variant}{
-								#{$_property}: $color;
-						}
-				}
-		}
+    $_class-keys: (
+        'text': text,
+        'border': border,
+        'background': bg,
+        'fill': fill,
+        'stroke': stroke
+    );
+    
+    $_property-keys: (
+        'text': color,
+        'border': border-color,
+        'background': background-color,
+        'fill': fill,
+        'stroke': stroke
+    );
+    
+    $_class-key: map.get($_class-keys, $type);
+    $_property: map.get($_property-keys, $type);
+    $_color-map: parser.split($color);
+    
+    @if validator.is-type_($type) {
+        @each $variant, $color in $_color-map {
+            .#{$_class-key}-#{$color-name}-#{$variant} {
+                #{$_property}: $color;
+            }
+        }
+    }
 }
