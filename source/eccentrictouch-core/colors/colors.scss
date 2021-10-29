@@ -1,0 +1,73 @@
+@use 'color-setters' as setter;
+
+$red: #c82121 !default;
+$orange: #ff6900 !default;
+$yellow: #e5bc1e !default;
+$lime: #29b625 !default;
+$green: #009758 !default;
+$aqua: #1fb6c6 !default;
+$blue: #3763ff !default;
+$purple: #8e35ff !default;
+$pink: #f837ff !default;
+$blueish-grey: #21313E !default;
+$neutral-grey: #696969 !default;
+
+// Background colors
+@include setter.generate-classes('background', $red, 'red');
+@include setter.generate-classes('background', $orange, 'orange');
+@include setter.generate-classes('background', $yellow, 'yellow');
+@include setter.generate-classes('background', $lime, 'lime');
+@include setter.generate-classes('background', $green, 'green');
+@include setter.generate-classes('background', $aqua, 'aqua');
+@include setter.generate-classes('background', $blue, 'blue');
+@include setter.generate-classes('background', $purple, 'purple');
+@include setter.generate-classes('background', $blueish-grey, 'blueish-grey');
+@include setter.generate-classes('background', $neutral-grey, 'neutral-grey');
+
+// Text colors
+@include setter.generate-classes('text', $red, 'red');
+@include setter.generate-classes('text', $orange, 'orange');
+@include setter.generate-classes('text', $yellow, 'yellow');
+@include setter.generate-classes('text', $lime, 'lime');
+@include setter.generate-classes('text', $green, 'green');
+@include setter.generate-classes('text', $aqua, 'aqua');
+@include setter.generate-classes('text', $blue, 'blue');
+@include setter.generate-classes('text', $purple, 'purple');
+@include setter.generate-classes('text', $blueish-grey, 'blueish-grey');
+@include setter.generate-classes('text', $neutral-grey, 'neutral-grey');
+
+// Border colors
+@include setter.generate-classes('border', $red, 'red');
+@include setter.generate-classes('border', $orange, 'orange');
+@include setter.generate-classes('border', $yellow, 'yellow');
+@include setter.generate-classes('border', $lime, 'lime');
+@include setter.generate-classes('border', $green, 'green');
+@include setter.generate-classes('border', $aqua, 'aqua');
+@include setter.generate-classes('border', $blue, 'blue');
+@include setter.generate-classes('border', $purple, 'purple');
+@include setter.generate-classes('border', $blueish-grey, 'blueish-grey');
+@include setter.generate-classes('border', $neutral-grey, 'neutral-grey');
+
+// SVG fill color
+@include setter.generate-classes('fill', $red, 'red');
+@include setter.generate-classes('fill', $orange, 'orange');
+@include setter.generate-classes('fill', $yellow, 'yellow');
+@include setter.generate-classes('fill', $lime, 'lime');
+@include setter.generate-classes('fill', $green, 'green');
+@include setter.generate-classes('fill', $aqua, 'aqua');
+@include setter.generate-classes('fill', $blue, 'blue');
+@include setter.generate-classes('fill', $purple, 'purple');
+@include setter.generate-classes('fill', $blueish-grey, 'blueish-grey');
+@include setter.generate-classes('fill', $neutral-grey, 'neutral-grey');
+
+// SVG stroke colors
+@include setter.generate-classes('stroke', $red, 'red');
+@include setter.generate-classes('stroke', $orange, 'orange');
+@include setter.generate-classes('stroke', $yellow, 'yellow');
+@include setter.generate-classes('stroke', $lime, 'lime');
+@include setter.generate-classes('stroke', $green, 'green');
+@include setter.generate-classes('stroke', $aqua, 'aqua');
+@include setter.generate-classes('stroke', $blue, 'blue');
+@include setter.generate-classes('stroke', $purple, 'purple');
+@include setter.generate-classes('stroke', $blueish-grey, 'blueish-grey');
+@include setter.generate-classes('stroke', $neutral-grey, 'neutral-grey');
